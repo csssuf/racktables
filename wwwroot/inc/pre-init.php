@@ -35,7 +35,7 @@ if (! isset ($racktables_staticdir)) // the directory containing 'pix', 'js', 'c
 if (! isset ($racktables_gwdir)) // the directory containing the 'telnet' and 'ssh' scripts
 	$racktables_gwdir = realpath ($racktables_rootdir . '/../gateways');
 if (! isset ($racktables_confdir)) // the directory containing secret.php (default is wwwroot/inc)
-	$racktables_confdir = dirname (__FILE__);
+	$racktables_confdir = dirname (__FILE__) . '/config';
 if (! isset ($path_to_secret_php)) // you can overrride the path to secret.php separately from $racktables_confdir (legacy feature)
 	$path_to_secret_php = $racktables_confdir . '/secret.php';
 if (! isset ($racktables_plugins_dir)) // the directory where RT will load additional *.php files (like local.php) from
